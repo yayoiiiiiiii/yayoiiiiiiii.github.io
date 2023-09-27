@@ -1,21 +1,121 @@
 <!DOCTYPE html>
+<link rel="stylesheet" href="./iconfont/iconfont.css">
 <link rel="stylesheet" href="./css/index.css">
+<link rel="stylesheet" href="./js/layui/dist/css/layui.css">
 <html>
 	<head>
 		<meta charset="utf-8">
 		<title>镇守府</title>
 	</head>
 	<body>
-		<div class="body-header">
-			<span>镇守府</span>
-			<span>此页面基于jquery开发，希望从这里为起点在未来掌握更多框架</span>
+		<div class="topBox" id="pageJump1">
+			<div class="fstImg">
+				<img src="./image/index/1695019856462.png" alt="">
+			</div>
+			<div class="text">
+				<span>镇守府&nbsp;&nbsp;&nbsp;Kasumi.cn</span>
+				<span>我是睦月型驱逐舰三号舰弥生，诞生于横须贺的浦贺。<br /><br />和睦月与望月组成舰队在各处奋战。<br /><br />很讨厌轰炸机什么的。<br /><br />请多指教呢。</span>
+			</div>
+			<div class="icon" onclick="toPage('2')"><i class="iconfont icon-xiajiantou"></i></div>
 		</div>
-		<div>
-			<span class="goJeecg">jeecg-vue2文档</span>
-			<span class="goTxt">随便写写</span>
-			<span class="goDiary">日记</span>
+		<div class="bdyBox">
+			<div class="currVit" id="pageJump2">
+				<div class="layui-carousel" id="currVit">
+					<div carousel-item class="currVit-box">
+						<div>
+							<span class="currVit-title1">1923年<br />（大正12年）</span>
+							<span class="currVit-body1">成为年度计划舰艇。7月19日，预定与浦贺造船厂建造，并得名“第二十三驱逐舰”，被归类为一级驱逐舰。</span>
+						</div>
+						<div>
+							<span class="currVit-title1">1924年<br />（大正13年）</span>
+							<span class="currVit-body1">1月11日开工，4月24日舰名被改为“第二十三号驱逐舰”。</span>
+						</div>
+						<div>
+							<span class="currVit-title1">1925年<br />（大正14年）</span>
+							<span class="currVit-body1">7月11日下水。</span>
+						</div>
+						<div>
+							<span class="currVit-title1">1926年<br />（大正15年）</span>
+							<span class="currVit-body1">8月28日竣工，归属于佐世保镇守府。</span>
+						</div>
+						<div>
+							<span class="currVit-title1">1928年<br />（昭和3年）</span>
+							<span class="currVit-body1">8月1日左右改名为“彌生（弥生）”。</span>
+						</div>
+						<div>
+							<span class="currVit-title1">1930年<br />（昭和5年）</span>
+							<span class="currVit-body1">11月中旬，昭和天皇将“雾岛”指命为御召舰，要求随舰从冈山县宇野一同返回京都。第三十驱逐队（睦月、如月、弥生、卯月）被指定为“雾岛”的供奉舰。11月21日，舰队到达横须贺，天皇退舰。</span>
+						</div>
+						<div>
+							<span class="currVit-title1">1937年<br />（昭和12年）</span>
+							<span class="currVit-body1">卢沟桥事变爆发，弥生号出入于华东、南海，并参加了佛印进驻作战。第三十驱逐队的编成被打乱，卯月、如月、夕月、望月等舰艇相继转入或转出。</span>
+						</div>
+						<div>
+							<span class="currVit-title1">1941年<br />（昭和16年）</span>
+							<span class="currVit-body1">12月7日日本偷袭珍珠港，12月8日以第六水雷战队·第十八战队（天龙、龙田）为主力的舰队，开始实施第一次威克岛攻略作战。</span>
+						</div>
+						<div>
+							<span class="currVit-title1">1942年<br />（昭和17年）</span>
+							<!-- <span class="currVit-title2">瞭望塔作战</span> -->
+							<span class="currVit-body1">瞭望塔作战<br /><br />8月7日，美军发动瞭望塔作战，第三十驱逐队于8月15日从佐世保出港，前往所罗门区域。8月24日早上7点，第三十驱逐队向肖特兰泊地出击。舰队以“睦月”为旗舰，“弥生”“阳炎”“矶风”“江风”为伴随舰，突入仑加泊地（ルンガ泊地），并于当日22点成功对飞机场进行了约十分钟的炮击。瓜岛炮击部队脱离所罗门群岛海域之后，与被第二水雷战队（司令官为田中赖三少将；编成包括轻巡洋舰“神通”以及第二十四驱逐队“海风”“凉风”）与警戒艇1号（初代岛风）、2号、34号、35号所护卫的隶属于横须贺镇守府的横须贺第五特别海军陆战队以及陆军一木支队的三艘运输船（波斯顿丸、大福丸、金龙丸）顺利汇合并向北推进。这支支援部队运输团在8月16日之后分多个批次向丘克群岛泊地出击，8月25日，该部队与瓜岛扬陆舰一同前往瓜岛。为了掩护该次作战行动，轻空母“龙骧”，重巡“利根”，驱逐舰“天津风”“时津风”也被派遣到瓜岛进行支援，然而，24日白天的时候“龙骧”遭到空袭而被击沉。8月25日早上6点，瓜岛炮击部队与增援部队运输船团在汇合之后开始变换阵型，在此过程中，船队遭到8架SBD无畏式俯冲轰炸机与3架B-17轰炸机的空袭，二水战旗舰“神通”中弹并导致甲板起火，“睦月”“金龙丸”沉没，其幸存者被“弥生”与“望月”救助。安武司令也转乘到“弥生”上，就此，“弥生”暂时成为了30驱的司令舰。“神通”与“凉风”被迫返航至丘克群岛泊地，在安武司令的决断之下，载有沉没舰艇幸存者的“弥生”以及警戒艇1号、2号走在运输船前方，退避至拉包尔。运输船“波斯顿丸”“大福丸”在驱逐舰“矶风”的指挥下同样退避到了拉包尔。8月27日凌晨2点，载有睦月号幸存者的“弥生”以及警戒艇1号、2号到达了拉包尔。本次战役中，第三十驱逐队“睦月”战沉，“卯月”也因为空袭受到损伤，归航到内地。</span>
+						</div>
+						<div>
+							<span class="currVit-title1">1942年<br />（昭和17年）</span>
+							<!-- <span class="currVit-title2">拉比岛攻略作战（新几内亚战役）</span> -->
+							<span class="currVit-body1">拉比岛攻略作战（新几内亚战役）<br /><br />第三十驱逐队“弥生”“望月”与第十八战队“天龙”“龙田”，第十七驱逐队“浦风”“谷风”“滨风”“矶风”，驱逐舰“岚”等舰船共同参加了拉比岛攻略作战（新几内亚战役）。为了让部队登陆而奋战于新几内亚和巴布亚新几内亚。9月3日，将20位联络员运送到陶波。9月4日夜晚，“弥生”为了搜寻失去联络的部队而突入米尔恩湾，向陷入苦战的海军陆战队提供粮食并带走了224名负伤人员，在5日凌晨1点准备返回拉包尔。另外， 尽管一部分弥生的乘员为了与海军陆战队取得联络而离船登陆于陶波（拉比岛北方），但后来由于战况紧急他们最终没能回到船上就这么被留在了岛上。9月10日16：30，搭载着安武司令的“弥生”在“矶风”的指挥之下，为了撤回拉比岛攻略部队（佐世保镇守府第五特别陆战队）而从拉包尔出港。9月11日正午时分，“弥生”于拉比岛东面的诺曼比岛遭到共计约10架的B-17、B-25空袭，舰艇后部被炸弹命中导致船舵故障，进而无法航行，最终于16:15沉没。</span>
+						</div>
+						<div>
+							<span class="currVit-title1">1942年<br />（昭和17年）</span>
+							<!-- <span class="currVit-title2">沉没</span> -->
+							<span class="currVit-body1">沉没<br /><br />同年10月20日，驱逐舰“彌生（弥生）”被分别从一等驱逐舰卯月型，帝国驱逐舰籍，第三十驱逐队除籍。</span>
+						</div>
+					</div>
+				</div> 
+			</div>
+			<div class="connection">
+				<div class="layui-tab" id="pageJump3">
+					<ul class="layui-tab-title">
+						<li class="layui-this yayoi"></li>
+						<li class="yayoi2"></li>
+					</ul>
+					<div class="layui-tab-content">
+						<div class="layui-tab-item layui-show">
+							<div class="ship-img">
+								<div class="layui-carousel" id="ID-carousel-demo-1">
+									<div carousel-item>
+										<div><img alt="" src=""></div>
+										<div><img alt="" src=""></div>
+										<div><img alt="" src=""></div>
+										<div><img alt="" src=""></div>
+										<div><img alt="" src=""></div>
+									</div>
+								</div> 
+							</div>
+							<div class="ship-parameter">
+
+							</div>
+						</div>
+						<div class="layui-tab-item">内容2</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="btmBox">
+			<div class="contact">
+				<span>关于我</span>
+				<span onclick="window.open('')">bilibili</span>
+				<span onclick="window.open('https://twitter.com/zhuhongji9936')">twitter</span>
+			</div>
+			<div class="link">
+				<span class="goJeecg">jeecg-vue2文档</span>
+				<span class="goTxt">随便写写</span>
+				<span class="goDiary">日记</span>
+				<span class="">活动记录</span>
+			</div>
 		</div>
 	</body>
 </html>
 <script src="./js/jquery/dist/jquery.min.js"></script>
+<script src="./js/less/dist/less.min.js"></script>
+<script src="./js/layui/dist/layui.js"></script>
 <script src="./js/index/index.js"></script>

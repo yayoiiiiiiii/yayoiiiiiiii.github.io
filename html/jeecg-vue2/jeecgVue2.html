@@ -1,1 +1,67 @@
-<div>hi</div>
+<div>此文本总结于antd官方文档和jeecg2官方文档</div>
+<div>
+  <h1>form 表单</h1>
+  通用
+  label：标签名
+  labelCol，wrapperCol：属于栅格里的属性，分别是标签还有输入框的尺寸
+  v-decorator：antd中类似v-model的一个东西，绑定字段的，同时校验规则也写在里面
+  placeholder：提示语
+  disabled：是否禁用
+
+  设置禁用标签 j-form-container
+  只需要设置 disabled 为 true 或者 false 就能控制整个表单是否禁用
+
+  输入框 a-input
+  type：指定输入框的格式（如 type="number" 会生成屁股后面带上下箭头的input框 ）
+
+  下拉框 j-dict-select-tag
+  :trigger-change="true" 也不知道这是啥 说是得加这个参数不然赋值不成功
+  dictCode：字典名
+
+  多选框 a-checkbox-group
+  template标签中循环list获取选择项
+  里面每一个选择项的标签是a-checkbox
+
+  时间段选择 a-range-picker
+  format：日期格式，如YYYY-MM-DD
+  placeholder：利用数组的性质展示两个框的提示语，如['挂牌开始时间', '挂牌结束时间']
+  @change：其中一个框日期改变触发函数
+  ref：同字段名
+
+  单选框 a-radio
+  template 上循环list渲染单选框 （TODO:好像也有用 a-radio-group 来包裹 a-raido 的，但是目前不知道用这种循环渲染循环是写在哪）
+  value：对应单选框的value
+
+  图片上传功能 j-image-upload
+  text：按钮显示文字，默认为上传
+  isMultiple：是否可上传多张照片，默认为false，仅支持一张
+  before-upload：图片上传前的校验写在这里的方法中 
+
+  <h1>table 表格</h1>
+
+  atab组件 a-tab-pane
+  tab：表格名字
+  key：区分不同表格
+  forceRender：被隐藏时是否渲染 DOM 结构
+
+  jeecg 封装的表格 j-editable-table
+  loading：是否正在加载，加载中不会显示任何行
+  columns：表格列的配置描述，其中包括：title-表格列头显示内容；key-列数据在数据项中对应的key，必须是唯一的；type-表单的类型，可以通过可以通过JEditableTableUtil.FormTypes赋值（此处会在下方说明）；width-列的宽度，推荐使用百分比；placeholder-表单预期值的提示信息；defaultValue-默认值，新增一行的时候生效；validateRules-表单验证规则；props-设置添加给表单元素的自定义属性；disabled-是否禁用当前列
+  dataSource：表格数据
+  rowNumber：是否显示行号
+  rowSelection：是否可显示行
+  actionButton：是否显示操作按钮，新增（编码为add），删除（编码为 batch_delete），按钮权限-authPre
+  dragSort：是否可拖动排序
+  
+
+
+
+  <h1>全局配置文件</h1>
+  后台服务域名：window._CONFIG['domianURL']
+  图片服务器域名：window._CONFIG['imgDomainURL']
+  pdf文件预览地址：window._CONFIG['pdfDomainURL']
+  CAS服务器地址：window._CONFIG['casPrefixUrl']
+  其余想用的可以直接在index文件中自己定义然后通过window._CONFIG全局引用
+
+
+</div>

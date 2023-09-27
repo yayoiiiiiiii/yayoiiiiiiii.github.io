@@ -1,0 +1,158 @@
+html,
+body {
+  overflow-y: hidden;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+.topBox {
+  position: relative;
+  width: auto;
+  height: auto;
+  max-height: 100vh;
+  overflow: hidden;
+}
+.topBox .fstImg img {
+  width: 100%;
+  height: 100%;
+  animation: breathe 5s linear infinite;
+}
+@keyframes breathe {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.topBox .text span:nth-child(1) {
+  position: absolute;
+  top: 5%;
+  left: 3%;
+  color: #fff;
+  font-size: 1.25vw;
+  font-weight: 700;
+}
+.topBox .text span:nth-child(2) {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  color: #fff;
+  font-size: 2.083333333333333vw;
+  font-weight: bolder;
+  -webkit-text-stroke: 2px #a7a7a7;
+  opacity: 0;
+  -webkit-animation: fadeInUp50 2s 0.1s forwards;
+  animation: fadeInUp50 2s 0.1s forwards;
+}
+@keyframes fadeInUp50 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 50px, 0);
+    transform: translate3d(0, 50px, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+.topBox .icon {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  animation: huxi 1200ms ease-out infinite alternate;
+  cursor: pointer;
+}
+.topBox .icon i {
+  color: #fff;
+}
+@keyframes huxi {
+  0% {
+    opacity: 0.2;
+    transform: scale(0.8);
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+    transform: translateY(-10px);
+  }
+}
+.bdyBox .currVit {
+  width: 100vw;
+  height: 100vh;
+}
+.bdyBox .currVit #currVit {
+  width: 100%;
+  height: 100%;
+}
+.bdyBox .currVit #currVit .currVit-box div {
+  position: relative;
+}
+.bdyBox .currVit #currVit .currVit-box div .currVit-title1 {
+  position: absolute;
+  left: 20%;
+  top: 50%;
+  transform: translate(0, -50%);
+  color: #fff;
+  font-weight: bolder;
+  text-align: center;
+  font-size: 2.083333333333333vw;
+  -webkit-text-stroke: 1px #8bbdff;
+}
+.bdyBox .currVit #currVit .currVit-box div .currVit-title2 {
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translate(0, -50%);
+  text-align: center;
+  font-size: 1.25vw;
+  -webkit-text-stroke: 1px #8bbdff;
+}
+.bdyBox .currVit #currVit .currVit-box div .currVit-body1 {
+  padding-right: 7.8125vw;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(0, -50%);
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.25vw;
+  -webkit-text-stroke: 1px #8bbdff;
+}
+.bdyBox .connection {
+  width: 100vw;
+  height: 100vh;
+}
+.bdyBox .connection .yayoi {
+  background-image: url(../image/index/0164_2746.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  min-width: 12.5vw;
+  min-height: 3.125vw;
+  border: none;
+  margin-right: 2.604166666666667vw;
+}
+.bdyBox .connection .yayoi2 {
+  background-image: url(../image/index/0308_1135.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  min-width: 12.5vw;
+  min-height: 3.125vw;
+  border: none;
+}
+.bdyBox .connection .layui-tab {
+  padding-top: 2.604166666666667vw;
+}
+.bdyBox .connection .layui-tab .layui-tab-title {
+  border: none;
+}
+.bdyBox .connection .layui-tab .layui-tab-title .layui-this:after {
+  border: none;
+}
